@@ -7,37 +7,37 @@
    <!-- default-init-method = "initDef" 
    default-destroy-method = "destroyDef" -->
 
-   <bean id = "helloWorld" class = "helloworld.xmlconfig.HelloWorld">
+   <bean id = "helloWorld" class = "xmlconfig.helloworld.xmlconfig.HelloWorld">
       <property name = "message" value = "Hello World!" />
       <property name = "message2" value = "Hello Second World!" />
    </bean>
-   <bean id = "helloWorldSingleton" class = "helloworld.xmlconfig.HelloWorld" scope="singleton"></bean>
-   <bean id = "helloWorldPrototype" class = "helloworld.xmlconfig.HelloWorld" scope="prototype"></bean>
-      <bean id = "helloWorldInitDestroy" class = "helloworld.xmlconfig.HelloWorld" init-method = "init" destroy-method = "destroy">
+   <bean id = "helloWorldSingleton" class = "xmlconfig.helloworld.xmlconfig.HelloWorld" scope="singleton"></bean>
+   <bean id = "helloWorldPrototype" class = "xmlconfig.helloworld.xmlconfig.HelloWorld" scope="prototype"></bean>
+      <bean id = "helloWorldInitDestroy" class = "xmlconfig.helloworld.xmlconfig.HelloWorld" init-method = "init" destroy-method = "destroy">
       <property name = "message" value = "Hello World!" />
    </bean>
-      <bean id = "helloWorldIndia" class = "helloworld.xmlconfig.HelloWorldIndia" parent = "helloWorld">
+      <bean id = "helloWorldIndia" class = "xmlconfig.helloworld.xmlconfig.HelloWorldIndia" parent = "helloWorld">
       <property name = "message" value = "India World!" />
       <property name = "message3" value = "India Third World!" />
    </bean>
    
    <!-- Definition for textEditor bean -->
-   <bean id = "textEditor" class = "dependency.injection.TextEditor">
+   <bean id = "textEditor" class = "xmlconfig.dependency.injection.TextEditor">
       <constructor-arg ref = "spellChecker"/>
       <property name = "commentChecker" ref = "commentChecker"/>
    </bean>
    
       <!-- commentChecker isim ile eslesti -->
-   <bean id = "textEditorByName" class = "dependency.injection.TextEditor" autowire = "byName">
+   <bean id = "textEditorByName" class = "xmlconfig.dependency.injection.TextEditor" autowire = "byName">
    	  <constructor-arg ref = "spellChecker"/>
       <property name = "name" value = "Generic Text Editor" />
    </bean>
 
    <!-- Definition for spellChecker bean -->
-   <bean id = "spellChecker" class = "dependency.injection.SpellChecker"></bean>
+   <bean id = "spellChecker" class = "xmlconfig.dependency.injection.SpellChecker"></bean>
    
       <!-- Definition for commentChecker bean -->
-   <bean id = "commentChecker" class = "dependency.injection.CommentChecker"></bean>
-      <bean id = "commentCheckerByName" class = "dependency.injection.CommentChecker"></bean>
+   <bean id = "commentChecker" class = "xmlconfig.dependency.injection.CommentChecker"></bean>
+      <bean id = "commentCheckerByName" class = "xmlconfig.dependency.injection.CommentChecker"></bean>
 
 </beans>

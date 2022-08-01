@@ -1,4 +1,4 @@
-package annotation.based.config.setter.injection;
+package xmlconfig.annotation.based.config.setter.injection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

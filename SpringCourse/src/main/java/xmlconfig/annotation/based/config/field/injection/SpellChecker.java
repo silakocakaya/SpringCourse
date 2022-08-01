@@ -1,4 +1,4 @@
-package annotation.based.config.field.injection;
+package xmlconfig.annotation.based.config.field.injection;
 
 public class SpellChecker {
 	   public SpellChecker(){

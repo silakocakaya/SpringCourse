@@ -1,4 +1,4 @@
-package annotation.based.config.constructor.injection;
+package xmlconfig.annotation.based.config.constructor.injection;
 
 public class SpellChecker {
 	   public SpellChecker(){

@@ -1,4 +1,4 @@
-package helloworld.xmlconfig;
+package xmlconfig.helloworld;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

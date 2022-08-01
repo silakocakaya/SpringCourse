@@ -1,4 +1,4 @@
-package helloworld.xmlconfig;
+package xmlconfig.helloworld;
 
 public class HelloWorld {
 

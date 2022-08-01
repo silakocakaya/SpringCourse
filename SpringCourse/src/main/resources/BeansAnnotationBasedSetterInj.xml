@@ -11,11 +11,15 @@
    <context:annotation-config/>
 
    <!-- Definition for textEditor bean without constructor-arg  -->
-   <bean id = "textEditor" class = "annotation.based.config.setter.injection.TextEditor">
+   <bean id = "textEditor" class = "xmlconfig.annotation.based.config.setter.injection.TextEditor">
    </bean>
 
    <!-- Definition for spellChecker bean -->
-   <bean id = "spellChecker" class = "annotation.based.config.setter.injection.SpellChecker">
+   <bean id = "spellChecker" class = "xmlconfig.annotation.based.config.setter.injection.SpellChecker">
+   </bean>
+   
+     <!-- Definition for spellChecker bean -->
+   <bean id = "textName" class = "java.lang.String">
    </bean>
 
 </beans>

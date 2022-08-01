@@ -1,21 +1,16 @@
-package annotation.based.config.constructor.injection;
+package xmlconfig.annotation.based.config.field.injection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * Constructoe injection XML configuration file'daki <property> eklesine gerek olmamaktadir
+ * Setter injection XML configuration file'daki <property> eklesine gerek olmamaktadir
  * @Autowired eklenmez ise null pointer hatasi alinmaktadir.
  *
  */
 public class TextEditor {
 	
-	private SpellChecker spellChecker;
-	
 	@Autowired
-	public TextEditor(SpellChecker spellChecker) {
-		super();
-		this.spellChecker = spellChecker;
-	}
+	private SpellChecker spellChecker;
 
 	public void spellCheck() {
 		getSpellChecker().checkSpelling();

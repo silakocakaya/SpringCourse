@@ -1,4 +1,4 @@
-package dependency.injection;
+package xmlconfig.dependency.injection;
 
 public class SpellChecker {
 	public SpellChecker() {
