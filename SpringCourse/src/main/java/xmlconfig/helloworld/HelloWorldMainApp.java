@@ -18,7 +18,7 @@ public class HelloWorldMainApp {
 		System.out.println("---FileSystemXmlApplicationContext");
 		//Classpath yerine butun uxanti verilir
 		ApplicationContext contextFile = new FileSystemXmlApplicationContext(
-				"C:\\Users\\sila.kaya\\workspaceWork\\SpringCourse\\src\\main\\resources\\Beans.xml");
+				"C:\\Users\\sila.kaya\\git\\SpringCourse\\src\\main\\resources\\Beans.xml");
 
 		HelloWorld obj = (HelloWorld) contextFile.getBean("helloWorld");
 		obj.getMessage();

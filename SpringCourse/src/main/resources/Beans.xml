@@ -7,16 +7,16 @@
    <!-- default-init-method = "initDef" 
    default-destroy-method = "destroyDef" -->
 
-   <bean id = "helloWorld" class = "xmlconfig.helloworld.xmlconfig.HelloWorld">
+   <bean id = "helloWorld" class = "xmlconfig.helloworld.HelloWorld">
       <property name = "message" value = "Hello World!" />
       <property name = "message2" value = "Hello Second World!" />
    </bean>
-   <bean id = "helloWorldSingleton" class = "xmlconfig.helloworld.xmlconfig.HelloWorld" scope="singleton"></bean>
-   <bean id = "helloWorldPrototype" class = "xmlconfig.helloworld.xmlconfig.HelloWorld" scope="prototype"></bean>
-      <bean id = "helloWorldInitDestroy" class = "xmlconfig.helloworld.xmlconfig.HelloWorld" init-method = "init" destroy-method = "destroy">
+   <bean id = "helloWorldSingleton" class = "xmlconfig.helloworld.HelloWorld" scope="singleton"></bean>
+   <bean id = "helloWorldPrototype" class = "xmlconfig.helloworld.HelloWorld" scope="prototype"></bean>
+      <bean id = "helloWorldInitDestroy" class = "xmlconfig.helloworld.HelloWorld" init-method = "init" destroy-method = "destroy">
       <property name = "message" value = "Hello World!" />
    </bean>
-      <bean id = "helloWorldIndia" class = "xmlconfig.helloworld.xmlconfig.HelloWorldIndia" parent = "helloWorld">
+      <bean id = "helloWorldIndia" class = "xmlconfig.helloworld.HelloWorldIndia" parent = "helloWorld">
       <property name = "message" value = "India World!" />
       <property name = "message3" value = "India Third World!" />
    </bean>
