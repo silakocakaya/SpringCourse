@@ -1,0 +1,9 @@
+package annotationBased.qualifiers;
+
+public interface Coach {
+
+	public String getDailyWorkout();
+
+	public String getDailyFortune();
+	
+}
