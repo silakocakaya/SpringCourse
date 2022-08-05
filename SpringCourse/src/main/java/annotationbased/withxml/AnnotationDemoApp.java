@@ -1,4 +1,4 @@
-package annotationBased;
+package annotationbased.withxml;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

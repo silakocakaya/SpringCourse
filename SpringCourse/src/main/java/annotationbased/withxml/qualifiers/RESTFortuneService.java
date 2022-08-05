@@ -1,4 +1,4 @@
-package annotationBased.qualifiers;
+package annotationbased.withxml.qualifiers;
 
 import org.springframework.stereotype.Component;
 

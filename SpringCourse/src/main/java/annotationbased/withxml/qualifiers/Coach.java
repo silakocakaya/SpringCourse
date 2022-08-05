@@ -1,4 +1,4 @@
-package annotationBased.qualifiers;
+package annotationbased.withxml.qualifiers;
 
 public interface Coach {
 

@@ -1,4 +1,4 @@
-package annotationConfig.dependencyInjection;
+package annotatioconfig.dependencyInjection;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package annotationConfig.dependencyInjection;
+package annotatioconfig.dependencyInjection;
 
 public class SpellChecker {
 	public SpellChecker() {

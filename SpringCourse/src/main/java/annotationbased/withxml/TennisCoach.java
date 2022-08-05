@@ -1,4 +1,4 @@
-package annotationBased;
+package annotationbased.withxml;
 
 import org.springframework.stereotype.Component;
 

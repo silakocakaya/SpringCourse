@@ -1,4 +1,4 @@
-package annotationBased.qualifiers;
+package annotationbased.withxml.qualifiers;
 
 public class HappyFortuneService implements FortuneService {
 

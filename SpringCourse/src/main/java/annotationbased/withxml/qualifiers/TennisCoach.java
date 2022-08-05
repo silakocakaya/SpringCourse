@@ -1,4 +1,4 @@
-package annotationBased.qualifiers;
+package annotationbased.withxml.qualifiers;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

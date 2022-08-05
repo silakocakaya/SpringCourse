@@ -1,4 +1,4 @@
-package annotationBased;
+package annotationbased.withxml;
 
 public interface Coach {
 
