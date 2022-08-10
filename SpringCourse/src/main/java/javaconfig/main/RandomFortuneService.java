@@ -1,4 +1,4 @@
-package javaconfig;
+package javaconfig.main;
 
 import java.util.Random;
 

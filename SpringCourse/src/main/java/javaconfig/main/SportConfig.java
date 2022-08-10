@@ -1,10 +1,10 @@
-package javaconfig;
+package javaconfig.main;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("javaconfig")
+@ComponentScan("javaconfig.main")
 public class SportConfig {
 
 }

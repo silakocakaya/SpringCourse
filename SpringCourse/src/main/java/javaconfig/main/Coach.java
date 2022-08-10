@@ -1,4 +1,4 @@
-package javaconfig;
+package javaconfig.main;
 
 public interface Coach {
 
