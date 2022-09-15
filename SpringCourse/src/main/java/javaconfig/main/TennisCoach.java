@@ -23,6 +23,9 @@ public class TennisCoach implements Coach {
 	@Qualifier("sadFortuneService")
 	private FortuneService fortuneServiceSad;
 	
+	@Autowired
+	private HappyFortuneService happyFortuneService;
+	
 	@PostConstruct
 	public void runPostConstruct() {
 		System.out.println("TennisCoach PostConstruct");
@@ -45,6 +48,11 @@ public class TennisCoach implements Coach {
 	public String getDailyFortune() {
 		System.out.println("SadFortune: " + fortuneServiceSad.getFortune());
 		return fortuneService.getFortune();
+	}
+	
+	public String getDailyFortuneFromHappy() {
+		System.out.println("HappyFortune: " + happyFortuneService.getFortune());
+		return happyFortuneService.getFortune();
 	}
 
 }
